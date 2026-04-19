@@ -1,6 +1,5 @@
 package org.example;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -14,30 +13,30 @@ public class Main {
         nombres.add("fanta");
         nombres.add("robocop");
 
-        System.out.print("Lista inicial nombres " + nombres);
+        System.out.println("Lista inicial nombres:");
         mostrarNombres(nombres);
 
         nombres.add("lucia");
-        System.out.print(" se agrega robin ");
+        System.out.println("Se agrega lucia:");
         mostrarNombres(nombres);
 
         nombres.add("peterpan");
-        System.out.print(" se agrega peterpam");
+        System.out.println("Se agrega peterpan:");
         mostrarNombres(nombres);
 
         nombres.remove("guason");
-        System.out.print(" despues de eliminar guason");
+        System.out.println("Despues de eliminar guason:");
         mostrarNombres(nombres);
 
         Collections.sort(nombres);
-        System.out.print(" En orden alfabetico nombres ");
+        System.out.println("En orden alfabetico nombres:");
         mostrarNombres(nombres);
-
     }
 
-        private static void mostrarNombres(ArrayList<String> nombres) {
-        for(String nombre : nombres){
-            System.out.print(nombre);
+    private static void mostrarNombres(ArrayList<String> nombres) {
+        for (String nombre : nombres) {
+            System.out.print(nombre + " ");
         }
+        System.out.println(); // Salto de linea para separar las salidas
     }
 }
